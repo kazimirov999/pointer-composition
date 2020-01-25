@@ -17,6 +17,11 @@ public class Main {
         wheel.setMaterial("покритий матеріалом з кожі");
         wheel.setKnittingNeedles(3);
         wheel.setColor("Колір руля чорний");
+        System.out.println("---------------------");
+        helm.size("Volvo", 15);
+        helm.drive("Stop");
+
+        car.names= "ggg";
 
     }
 }

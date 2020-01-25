@@ -22,6 +22,37 @@ public class Helm extends Car {
     public void text(){
         System.out.println(rubberTires.toString());
     }
+
+    public void size(String nCar, int d){
+        String car = nCar;
+        int diameter = d;
+        switch (car){
+            case "Audi":
+                if (diameter >=13 && diameter <=16) {
+                 System.out.println(diameter +=2);
+                }else{
+                    System.out.println(diameter+=5);
+                    break;
+                }
+            case "Volvo":
+                if (diameter >=13 && diameter <=16) {
+                    diameter += 5;
+                 System.out.println(diameter);
+                }else {
+                    System.out.println(diameter +=10);
+                    break;
+                }
+        }
+    }
+
+    public void drive(String drive){
+        String d = drive;
+        if (d == "Start"){
+            System.out.println("двигун запущено, можна їхати");
+        }else if (d == "Stop"){
+            System.out.println("двигун виключено. Уже ныхто нікуда не їде)))");
+        }
+    }
 }
 
 

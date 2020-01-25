@@ -29,5 +29,4 @@ public class Wheel extends Car {
         System.out.println(col);
     }
 
-
 }
