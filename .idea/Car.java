@@ -1,24 +1,52 @@
 public class Car {
-    private String MakeAndModel = "Tesla Model X";
-    Wheel wheel;
-    Body body;
-    Handlebar handlebar;
 
-    public Car(){
-        wheel = new Wheel(100);
-        body = new Body("Sport");
-        handlebar = new Handlebar(360);
+    private int maximumAcceleration;
+    private int engineSpeed;
+
+    private Body bodyCar;
+    private Wheel wheelCar;
+    private SteeringWheel steeringWheelCar;
+
+    public Car(int maximumAcceleration, int engineSpeed){
+        this.maximumAcceleration = maximumAcceleration;
+        this.engineSpeed = engineSpeed;
+        bodyCar = new Body("Sport", "Red");
+        wheelCar = new Wheel(20);
+        steeringWheelCar = new SteeringWheel("Righ or Left", 90);
     }
 
-    public String getMakeAndModel() {
-        return MakeAndModel;
+    public int getMaximumAcceleration() {
+        return maximumAcceleration;
     }
 
-    public void setMakeAndModel(String makeAndModel) {
-        MakeAndModel = makeAndModel;
+    public void setMaximumAcceleration(int maximumAcceleration) {
+        this.maximumAcceleration = maximumAcceleration;
     }
 
-    public void CarMakeAndModelDisplay(){
-        System.out.println("Марка та Модель ->" + getMakeAndModel());
+    public int getEngineSpeed() {
+        return engineSpeed;
+    }
+
+    public void setEngineSpeed(int engineSpeed) {
+        this.engineSpeed = engineSpeed;
+    }
+
+    public Body getBodyCar() {
+        return bodyCar;
+    }
+
+    public Wheel getWheelCar() {
+        return wheelCar;
+    }
+
+    public SteeringWheel getSteeringWheelCar() {
+        return steeringWheelCar;
+    }
+
+    @Override
+    public String toString() {
+        return bodyCar.toString() + wheelCar.toString() +
+                steeringWheelCar.toString() + "Ваша максимальна швидкість ->"
+                + maximumAcceleration + "Обороти двигуна становлять -> " + engineSpeed;
     }
 }

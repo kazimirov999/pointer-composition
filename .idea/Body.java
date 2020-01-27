@@ -1,19 +1,31 @@
 public class Body {
-    private String BodyStyle;
+    private String bodyStyle;
+    private String color;
 
-    public Body(String bodyStyle){
-        BodyStyle = bodyStyle;
+    public Body(String bodyStyle, String color){
+        this.bodyStyle = bodyStyle;
+        this.color = color;
     }
 
-    public  void setBodyStyle(String bodyStyle){
-        BodyStyle = bodyStyle;
+    public String getBodyStyle() {
+        return bodyStyle;
     }
 
-    public  String getBodyStyle(){
-        return BodyStyle;
+    public void setBodyStyle(String bodyStyle) {
+        this.bodyStyle = bodyStyle;
     }
 
-    public void BodyStyleDisplay(){
-        System.out.println("Ваш стиль, кузова = " + BodyStyle);
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Стиль вашої машина ->" + bodyStyle
+                + " Колір вашої машини ->" + color;
     }
 }
