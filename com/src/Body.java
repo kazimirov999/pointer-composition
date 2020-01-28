@@ -1,6 +1,6 @@
 package src;
 
-public class Body {
+public class Body implements  Type{
     private String body;
 
     public String getBody() {
@@ -10,8 +10,8 @@ public class Body {
     public void setBody(String body) {
         this.body = body;
     }
-
-    void type() {
+     @Override
+     public void type() {
         System.out.println("Body type is:  " + getBody());
     }
 }

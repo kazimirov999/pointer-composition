@@ -1,6 +1,6 @@
 package src;
 
-public class SteeringWheels {
+public class SteeringWheels  {
     private int degrees;
 
     public int getDegrees() {
