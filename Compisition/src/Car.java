@@ -3,11 +3,7 @@ public class Car {
     private String seatHeat;
     private String typeFuel;
 
-    void Baza(String cruise, String seatHeat, String typeFuel) {
-        this.cruise = cruise;
-        this.seatHeat = seatHeat;
-        this.typeFuel = typeFuel;
-    }
+    
 
     public Car(String cruise, String seatHeat, String typeFuel) {
         this.cruise = cruise;
