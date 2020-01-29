@@ -1,3 +1,5 @@
+package NewCar;
+
 import java.util.Arrays;
 
 public class Car {
@@ -68,3 +70,45 @@ public class Car {
                 "4 колеса з шимами" + Arrays.toString(wheelWithTires);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

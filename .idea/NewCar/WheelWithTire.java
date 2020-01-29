@@ -1,4 +1,7 @@
+package NewCar;
+
 public class WheelWithTire {
+
     private int pressure;
     private String color;
     private int diameter;
