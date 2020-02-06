@@ -25,7 +25,7 @@ private String Material;
     }
 
     public void HelmDisplay(){
-        System.out.println("Диаметр Руля "+ Diameter +" Матеріал з якого віготовлений руль" + Material);
+        System.out.println("Диаметр Руля "+ Diameter +" Матеріал з якого віготовлений руль " + Material);
     }
 
 
